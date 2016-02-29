@@ -20,6 +20,5 @@
             "JimiGrunge\\BootstrapColorPickerBundle\\": "" 
         }
     },
-    "minimum-stability": "stable",
-    "target-dir": "JimiGrunge/BootstrapColorPickerBundle"
+    "minimum-stability": "stable"
 }
