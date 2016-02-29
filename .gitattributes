@@ -1,0 +1,2 @@
+# Tell git to detect all text files and automatically convert to LF
+* text eol=lf

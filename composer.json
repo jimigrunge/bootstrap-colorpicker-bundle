@@ -1,0 +1,25 @@
+{
+    "name": "jimigrunge/bootstrap-colorpicker-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 bundle for wrapping the famous bootstrap-colorpicker jquery plugin by @mjolnic",
+    "keywords": ["jquery", "bootstrap-colorpicker", "bundle"],
+    "homepage": "http://github.com/jimigrunge/bootstrap-colorpicker-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Grundner",
+            "email": "james@jgrundner.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "~2.3|~3.0"
+    },
+    "autoload": {
+        "psr-4": { 
+            "JimiGrunge\\BootstrapColorPickerBundle\\": "" 
+        }
+    },
+    "minimum-stability": "stable",
+    "target-dir": "JimiGrunge/BootstrapColorPickerBundle"
+}

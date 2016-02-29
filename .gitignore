@@ -1,0 +1,37 @@
+
+##############################
+# Environment configurations #
+##############################
+/composer.phar
+!.gitkeep
+
+##################
+# IDE files      #
+##################
+# Intellij(PhpStorm)
+.idea/
+*.iml
+*.iws
+# Netbeans
+nbproject/
+nbproject/*
+# Eclipse
+.classpath
+.project
+.settings/
+
+######################
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+*~.nib
+*~
