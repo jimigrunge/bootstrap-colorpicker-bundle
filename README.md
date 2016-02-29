@@ -49,13 +49,13 @@ public function registerBundles()
 Given your server's public directory is named "web", install the public vendor resources
 
 ```
-$ php app/console assets:install web
+$ php bin/console assets:install web
 ```
 
 Optionally, use the --symlink attribute to create links rather than copies of the resources
 
 ```
-$ php app/console assets:install --symlink web
+$ php bin/console assets:install --symlink web
 ```
 
 ## Usage
@@ -70,7 +70,7 @@ Note: bootstrap-colorpicker requires the jQuery library.
     <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
     {% javascripts
         ...
-        '@BootstrapColorPickerBundle/Resources/dist/js/bootstrap-colorpicker.min.js'
+        '@BootstrapColorPickerBundle/Resources/public/js/bootstrap-colorpicker.min.js'
         ...
         %}
         <script src="{{ asset_url }}"></script>
@@ -84,12 +84,20 @@ Then you will want to load the css resources so your select elements look nice:
 {% block stylesheets %}
     {% stylesheets filter='cssrewrite'
       ...
-      'bundles/jimigrungecolorpicker/css/bootstrap-colorpicker.min.css'
+      'bundles/bootstrapcolorpicker/css/bootstrap-colorpicker.min.css'
       ...
     %}
         <link rel="stylesheet" href="{{ asset_url }}" />
     {% endstylesheets %}
 {% endblock %}
+```
+
+### Assetic 
+
+Dump bundled files to the filesystem.
+
+```
+$ php bin/console assetic:dump
 ```
 
 ## Licenses
